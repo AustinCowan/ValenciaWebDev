@@ -1,0 +1,9 @@
+/******************
+COLORS
+******************/
+body{}
+header{background-color:#3AAFDE;}
+nav{}
+nav a, nav a:visited{color:#8D9493;}
+nav a.selected, nav a:hover {color:#FFFFFF;}
+p{background-color:#75D8FF;}
