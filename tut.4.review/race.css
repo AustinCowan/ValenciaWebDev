@@ -65,11 +65,11 @@ header img {
 	font-size: 85%;
 }
 
-.horizontal a {
+.horizontal li a {
 	color: white;
 }
 
-.horizontal a:hover {
+.horizontal li a:hover {
 	color: rgb(215, 181, 151);
 }
 /*--------------------.vertical Styles--------------------*/
@@ -82,18 +82,18 @@ header img {
 	padding-top: 25px;
 }
 /*--------------------.vertical Styles--------------------*/
-.vertical a {
+.vertical li a {
 	color: white;
 	display: block;
 	text-indent: 10px;
 }
 
-.vertical a:hover {
+.vertical li a:hover {
 	background-color: rgb(51, 51, 51);
 	outline: 2px solid rgb(215, 181, 151);
 }
 /*--------------------#section Styles--------------------*/
-#section {
+section {
 	clear: left;
 	float: left;
 	margin-left: 21%;
