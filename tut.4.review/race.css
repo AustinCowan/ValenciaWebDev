@@ -93,13 +93,13 @@ header img {
 	outline: 2px solid rgb(215, 181, 151);
 }
 /*--------------------#section Styles--------------------*/
-section {
+/*section {
 	clear: left;
 	float: left;
 	margin-left: 21%;
 	margin-top: 20px;
 	width: 49%;
-}
+}*/
 /*--------------------#main Styles--------------------*/
 #main h1 {
 	color: rgb(189, 131, 82);
