@@ -1,0 +1,104 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 5
+   Review Assignment
+
+   Programming Table Style Sheet
+   Author:Austin Cowan 
+   Date:10/23/2016   
+
+   Filename:         programs.css
+   Supporting Files: 
+
+*/
+/*``````````Table Styles``````````*/
+table.programs {
+	width: 100%;
+	border: 2px solid black;
+	border-collapse: collapse;
+	font-family: 'Arial', 'Verdana', 'sans-serif';
+}
+
+/*``````````Table Caption Styles``````````*/
+
+
+table.programs caption {
+	caption-side: bottom;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+/*``````````Table Body Styles``````````*/
+
+table.programs tbody th, table.programs tbody td {
+	font-size: 0.7em;
+	vertical-align: top;
+	border: 1px solid gray;
+	padding: 2px;
+}
+
+/*``````````Table Row Styles``````````*/
+
+table.programs tr {
+	height: 25px;
+}
+
+/*``````````Table Header Styles``````````*/
+
+table.programs thead {
+	color: white;
+	background-color: rgb(153, 86, 7);
+} 
+
+table.programs thead th {
+	font-size: 0.7em;
+	border: 1px solid gray;
+}
+
+table.programs thead th:nth-of-type(1){
+	background-color: rgb(153, 86, 7);
+	/*width: 7%;*/
+}
+
+table.programs thead th:nth-of-type(7){
+	background-color: rgb(153, 0, 153);
+}
+
+table.programs thead th:nth-of-type(8){
+	background-color: rgb(153, 0, 153);
+}
+
+/*``````````Table Column Styles``````````*/
+
+table.programs col.timeColumn{
+	width: 10%;
+	background-color: rgb(215, 205, 151);
+}
+
+table.programs col.wDayColumns {
+	width: 11%;
+	background-color: rgb(236, 255, 211);
+}
+
+table.programs col.wEndColumns {
+	width: 17%;
+	background-color: rgb(255, 231, 255);
+}
+
+/*``````````Three Column Layout``````````*/
+
+section p {
+   
+   -moz-column-count: 3;
+   -webkit-column-count: 3;
+   column-count: 3;
+   
+   -moz-column-gap: 20px;
+   -webkit-column-gap: 20px;
+   column-gap: 20px;
+   
+   -moz-column-rule: 1px solid black;
+   -webkit-column-rule: 1px solid black;
+   column-rule: 1px solid black;
+   
+}
