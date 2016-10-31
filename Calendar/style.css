@@ -1,0 +1,174 @@
+/*NAV STYLES*/
+nav ul {
+  background-color: rgba(255, 163, 102, .8);
+}
+
+nav ul li {
+  padding: 10px;
+  display: inline-block;
+  float: right;
+  list-style: none; 
+}
+
+nav a {
+  font-family: helvetica;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+
+
+/*H1 STYLES*/
+
+    h1 {
+  background-color: rgba(255, 163, 102, .8);
+  margin-bottom: -.5em;
+  color: #fff; 
+}
+
+/*CALENDAR STYLES*/
+
+#calendar {
+	width: 100%;
+}
+
+<!--#calendar a {
+	color: #666
+	text-decoration: none;
+}-->
+
+
+
+/*CALENDAR LAYOUT STYLES*/
+
+#calendar: ul {
+	clear: both;
+	width: 100%;
+}
+
+#calendar li {
+	display: inline-block;
+  box-sizing: border-box;
+  float: left;
+	width: 14.2%;
+	padding: 5px;
+	border: 1px solid #f5f5f5;
+	<!--margin-right: -1px;
+	margin-bottom: -1px;-->
+  
+}
+
+
+
+/*CALENDAR LABELROW STYLES*/
+
+#calendar ul.labelrow{
+	height: 40px;
+	background: #555;
+}
+
+#calendar ul.labelrow li {
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 20px;
+	border: none;
+	padding: 11px 5px;
+	color: #fff;
+	font-size: 16px;
+}
+
+
+
+/*CALENDAR ROW STYLES*/
+
+#calendar .row li {
+	height: 200px;
+}
+
+#calendar .row li:hover {
+	background: rgba(85, 85, 85, .8);
+}
+
+
+
+/*CALENDAR DATE STYLES*/
+
+#calendar .date {
+	text-align: center;
+	margin-bottom: 5px;
+	padding: 5px;
+	background: #777;
+	color: #fff;
+	width: 25px;
+	border-radius: 50%;
+	float: right;
+}
+
+
+
+/*CALENDAR SPECIAL EVENT STYLES*/
+
+#calendar .special {
+	clear: both;
+	display: inline-block;
+	font-size: 12px;
+	border-radius: 5px;
+	margin-top: 45px;
+  margin-bottom: 10px;
+  padding: 5px;
+	line-height: 20px;
+	background-color: rgba(255, 163, 102, .8);
+	border: 1px solid #999;
+	color: #000;
+	text-decoration: none;
+}
+
+#calendar .special a {
+  font-family: helvetica;
+  text-decoration: none;
+}
+
+#calendar .special a:hover {
+  color: #fff;
+}
+
+
+
+/*CALENDAR DATEBOX STYLES*/
+
+#calendar .datebox {
+  background: rgba(230, 230, 230, .8);
+}
+
+
+
+/*CALENDAR OTHER MONTH STYLES*/
+
+#calendar .other-month {
+	background: rgba(245, 245, 245, .8);
+	color: #000;
+}
+
+
+
+/*FOOTER STYLES*/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top: 50px;
+  color:#fff;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
