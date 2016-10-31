@@ -38,10 +38,9 @@ nav a:hover {
 	width: 100%;
 }
 
-<!--#calendar a {
-	color: #666
-	text-decoration: none;
-}-->
+body {
+	margin: 0 auto;
+}
 
 
 
