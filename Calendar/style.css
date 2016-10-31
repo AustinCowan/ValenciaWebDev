@@ -112,6 +112,14 @@ nav a:hover {
   	float: right;
 }
 
+#calendar .numberformat {
+  display: block;
+  float: left;
+  position: absolute;
+  margin-top: -33px;
+  margin-left: -10px;
+}
+
 
 
 /*CALENDAR SPECIAL EVENT STYLES*/
