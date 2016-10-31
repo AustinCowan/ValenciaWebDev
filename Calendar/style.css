@@ -112,7 +112,7 @@ nav a:hover {
   	float: right;
 }
 
-#calendar .numberformat {
+#calendar span {
   display: block;
   float: left;
   position: absolute;
