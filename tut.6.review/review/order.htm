@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML and CSS
+      Tutorial 6
+      Review Assignment
+
+      Red Ball Pizza Order Form
+      Author: Austin Cowan
+      Date: 11/05/2016  
+
+      Filename:         order.htm
+      Supporting files: delivery.png, formsubmit.js, full.png
+                        left.png, modernizr-1.5.js, none.png, 
+                        okay.png, pizzatxt.css, redball.css,
+                        redball.png, regex.txt, right.png,
+                        sizes.png, warning.png
+
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Build your own Pizza</title>
+      <script src="modernizr-1.5.js"></script>
+      <script src="formsubmit.js"></script>
+
+      <link href="redball.css" rel="stylesheet" />
+      <link href="pizzatxt.css" rel="stylesheet" />
+
+
+   </head>
+
+   <body>
+
+      <header>
+         <img src="redball.png" alt="Red Ball Pizza" />
+         <nav>
+            <ul>
+               <li><a href="#">home</a></li>
+               <li><a href="#">menu</a></li>
+               <li><a href="#">directions</a></li>
+               <li><a href="#">coupons</a></li>
+               <li><a href="#">orders</a></li>
+               <li><a href="#">catering</a></li>
+               <li><a href="#">reviews</a></li>
+       </ul>
+         </nav>
+      
+         <article>
+            <h1>Online Ordering</h1>
+            <p>Thank you for using our <em>online ordering</em>
+               form for quick and easy orders, delivered free, fast, and 
+               hot to your door. If you need to talk to us directly,
+               call Red Ball Pizza at (386) 555 - 7499.
+            </p>
+         </article>
+      </header>
+
+   <section>
+      <p>Required values are marked by an asterisk (*)</p>
+      <form name="pizza" id="pizza" action="http://www.redballpizza.com/cgi-bin/buildpizza" method="post">
+
+      <fieldset id="custInfo">
+         <legend>Customer Information</legend>
+         <label for="custname">Name *</label>
+         <input name="custname" id="custname" required="required" placeholder="First and Last Name"/>
+         <label for="address">Delivery Address *</label>
+         <textarea name="address" id="address" required="required"></textarea>
+         <label for="phone">Phone *</label>
+         <input name="phone" id="phone" type="text" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+         <label for="delTime">Delivery Time<br/>(leave blank for immediate delivery)</label>
+         <input name="delTime" id="delTime" placeholder="hh:mm AM/PM" pattern="^([0-9]|1[012]):[0-5][0-9]\s?((a|p)m|(A|P)M)$"/>
+      </fieldset>
+
+      <fieldset id="buildPizza">
+         <legend>Build Your Own Pizza</legend>
+         <img src="sizes.png" id="sizeimage" alt="pizza size: 10, 12, or 14 inch">
+         <label for="size">Select Your Pizza Size<br/>(10, 12, or 14 inch)</label>
+         <input type="range" name="size" id="size" min="10" max="14" value="12" step="2"/>
+         <label for="crust">Choose Your Crust</label>
+         <select name="crust" id="crust">
+               <option value="thin">Thin</option>
+               <option value="thick">Thick</option>
+               <option value="stuffed">Stuffed</option>
+               <option value="pan">Pan</option>
+         </select>
+         <label for="quantity">Quantity<br/>(call for quantities larger than 10 pizza)</label>
+         <input name="quantity" id="quantity" type="number" min="1" max="10" value="1" step="1"/>
+         <label for="instructions">Special Instructions</label>
+         <textarea name="instructions" id="instructions"></textarea>
+
+          <fieldset id="meat">
+            <legend>Meat Toppings</legend>
+            <label>Location</label>
+               <img src="full.png" alt="full">
+               <img src="left.png" alt="left">
+               <img src="right.png" alt="right">
+               <img src="none.png" alt="none">
+
+          <fieldset class="optionGroup" id="pepperoni">
+             <label>Pepperoni</label>
+             <input name="pepperoniOption" type="radio" value="full"/>
+             <input name="pepperoniOption" type="radio" value="left"/>
+             <input name="pepperoniOption" type="radio" value="right"/>
+             <input name="pepperoniOption" type="radio" value="none" checked="checked"/>
+          </fieldset>
+
+          <fieldset class="optionGroup" id="ham">        
+            <label>Ham</label>
+            <input name="hamOption" type="radio" value="full"/>
+            <input name="hamOption" type="radio" value="left"/>
+            <input name="hamOption" type="radio" value="right"/>
+            <input name="hamOption" type="radio" value="none" checked="checked"/>
+          </fieldset>
+
+          <fieldset class="optionGroup" id="pork">
+            <label>Pork</label>
+            <input name="porkOption" type="radio" value="full"/>
+            <input name="porkOption" type="radio" value="left"/>
+            <input name="porkOption" type="radio" value="right"/>
+            <input name="porkOption" type="radio" value="none" checked="checked"/>
+          </fieldset>
+
+          <fieldset class="optionGroup" id="sausage">
+             <label>Sausage</label>
+             <input name="sausageOption" type="radio" value="full"/>
+             <input name="sausageOption" type="radio" value="left"/>
+             <input name="sausageOption" type="radio" value="right"/>
+             <input name="sausageOption" type="radio" value="none" checked="checked"/>
+          </fieldset>
+
+          <fieldset class="optionGroup" id="chicken">
+            <label>Chicken</label>
+            <input name="chickenOption" type="radio" value="full"/>
+            <input name="chickenOption" type="radio" value="left"/>
+            <input name="chickenOption" type="radio" value="right"/>
+            <input name="chickenOption" type="radio" value="none" checked="checked"/>
+          </fieldset>
+      </fieldset>
+      
+      <fieldset id="vegetables">
+         <legend>Vegetable Toppings</legend>
+         <label>Location</label>
+         <img src="full.png" alt="full">
+         <img src="left.png" alt="left">
+         <img src="right.png" alt="right">
+         <img src="none.png" alt="none">
+
+         <fieldset class="optionGroup" id="mushrooms">
+            <label>Mushrooms</label>
+            <input name="mushroomsOption" type="radio" value="full"/>
+            <input name="mushroomsOption" type="radio" value="left"/>
+            <input name="mushroomsOption" type="radio" value="right"/>
+            <input name="mushroomsOption" type="radio" value="none" checked="checked"/>
+         </fieldset>
+
+         <fieldset class="optionGroup" id="ham">
+            <label>Green Peppers</label>
+            <input name="greenPeppersOption" type="radio" value="full"/>
+            <input name="greenPeppersOption" type="radio" value="left"/>
+            <input name="greenPeppersOption" type="radio" value="right"/>
+            <input name="greenPeppersOption" type="radio" value="none" checked="checked"/>
+         </fieldset>
+
+         <fieldset class="optionGroup" id="pork">
+            <label>Onions</label>
+            <input name="onionsOption" type="radio" value="full"/>
+            <input name="onionsOption" type="radio" value="left"/>
+            <input name="onionsOption" type="radio" value="right"/>
+            <input name="onionsOption" type="radio" value="none" checked="checked"/>
+         </fieldset>
+
+         <fieldset class="optionGroup" id="sausage">
+            <label>Tomatoes</label>
+            <input name="tomatoesOption" type="radio" value="full"/>
+            <input name="tomatoesOption" type="radio" value="left"/>
+            <input name="tomatoesOption" type="radio" value="right"/>
+            <input name="tomatoesOption" type="radio" value="none" checked="checked"/>
+         </fieldset>
+
+         <fieldset class="optionGroup" id="chicken">
+            <label>Jalapenos</label>
+            <input name="jalapenosOption" type="radio" value="full"/>
+            <input name="jalapenosOption" type="radio" value="left"/>
+            <input name="jalapenosOption" type="radio" value="right"/>
+            <input name="jalapenosOption" type="radio" value="none" checked="checked"/>
+         </fieldset>
+
+      </fieldset>
+         <label for="doubleCheese">Add Double Cheese</label>
+         <input name="doubleCheese" id="doubleCheese" type="checkbox"/>
+
+         <label for="doubleSauce">Add Double Sauce</label>
+         <input name="doubleSauce" id="doubleSauce" type="checkbox"/>
+      </fieldset>
+
+         <input type="submit" value="Next"/>
+
+      </form>
+
+
+   </section>
+
+   <footer>
+      <address>
+         Red Ball Pizza &bull;
+         811 Beach Drive &bull;
+         Ormond Beach, FL  32175 &bull;
+         (386) 555 - 7499 
+      </address>
+   </footer>
+
+   </body>
+
+</html>

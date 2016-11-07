@@ -1,0 +1,201 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Review Assignment
+
+   Pizza Order Style Sheet
+   Author: Austin Cowan
+   Date: 11/05/2016  
+
+   Filename:         pizza.css
+   Supporting Files: delivery.png, okay.png, warning.png
+
+*/
+
+/*FIELDSET STYLES*/
+
+fieldset {
+   background-color: rgb(255, 246, 205);
+   border: 1px solid rgb(233, 69, 0);
+
+   float: left;
+   margin: 1%;
+   
+}
+
+#custInfo {
+   width: 35%;
+}
+
+#buildPizza {
+   width: 60%;
+}
+
+#meat, #vegetables {
+   background-color: rgb(237, 178, 74);
+   width: 47%;
+}
+
+
+
+/*#meat legend {
+
+}*/
+
+
+
+/*LEGEND STYLES*/
+
+legend {
+   font-size: 0.9em;
+}
+
+
+
+/*LABEL STYLES*/
+
+label {
+   display: block;
+   font-size: 0.8em;
+   float: left;
+   clear: left;
+   width: 40%;
+   margin: 5px 0px;
+   padding-left: 5px;
+}
+
+
+
+/*INPUT STYLES*/
+
+input {
+   display: block;
+   float: left;
+   width: 50%;
+}
+
+
+
+/*TEXTAREA STYLES*/
+
+textarea {
+   display: block;
+   float: left;
+   width: 50%;
+   margin: 5px 0px;
+   height: 100px;
+}
+
+
+
+/*IMAGE STYLES*/
+
+form img {
+   display: block;
+   float: left;
+   margin: 5px 0px;
+}
+
+
+
+/*DELTIME STYLES*/
+
+#delTime {
+   width: 150px;
+}
+
+
+
+/*SIZEIMAGE STYLES*/
+
+#sizeimage {
+   margin-left: 40%;
+}
+
+
+
+/*SELECT STYLES*/
+
+select {
+   float: left;
+   margin: 5px 0px;
+   width: 150px;
+}
+
+
+
+/*QUANTITY STYLES*/
+
+#quantity {
+   width: 40px;
+}
+
+
+
+/*OPTIONGROUP STYLES*/
+
+.optionGroup {
+   width: 100%;
+   background-color: transparent;
+   border: none;
+}
+
+.optionGroup label {
+   display: inline;
+   float: left;
+}
+
+.optionGroup input {
+   display: inline;
+   float: left;
+
+}
+
+
+
+/*INPUT TYPE STYLES*/
+
+input[type="range"] {
+   width: 200px;
+   background-color: transparent;
+}
+
+input[type="radio"] {
+   width: 30px;
+}
+
+input[type="checkbox"] {
+   width: 20px;
+}
+
+input[type="submit"] {
+   width: 150px;
+   float: none;
+   margin: 0px auto;
+}
+
+
+
+/*FOCUS STYLES*/
+
+input:focus, select:focus, textarea:focus {
+   background-color: rgb(220, 255, 220);
+}
+
+input:focus:valid {   
+   background: rgb(255, 232, 233) url(okay.png) bottom right no-repeat;
+   
+   -o-background-size: contain;
+   -moz-background-size: contain;
+   -webkit-background-size: contain;
+   background-size: contain;
+}
+
+input:focus:invalid {   
+   background: rgb(255, 232, 233) url(warning.png) bottom right no-repeat;
+
+   -o-background-size: contain;
+   -moz-background-size: contain;
+   -webkit-background-size: contain;
+   background-size: contain;
+}
