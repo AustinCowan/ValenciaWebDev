@@ -1,0 +1,124 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 7
+   Review Assignment
+
+   Jumbo Popcorn Style Sheet
+
+   Author: Austin Cowan          
+   Date: 11/13/2016            
+
+   Filename:         embed.css
+   Supporting Files: 
+
+*/
+/*.IMDB_URL STYLES*/
+
+.imdb_url a {
+   text-decoration: none;
+   color: black;
+}
+
+.imdb_url a:link{
+   color: black;
+}
+
+.imdb_url a:visited{
+   color: black;
+}
+
+.imdb_url a:hover{
+   color:  rgb(162, 112, 41);
+}
+
+.imdb_url a:active{
+   color:  rgb(182, 142, 41);
+}
+
+
+
+/*JAVA_LINK STYLES*/
+
+#java_link {
+   text-decoration: none;
+   color: black;
+}
+
+#java_link:link{
+   color: black;
+}
+
+#java_link:visited{
+   color: black;
+}
+
+#java_link:hover{
+   color:  orangered;
+}
+
+#java_link:active{
+   color:  darkorange;
+}
+
+
+
+/*IN_TEXT_URL STYLES*/
+
+.in_text_url a {
+   text-decoration: none;
+   color: black;
+}
+
+.in_text_url a:link{
+   color:  darkseagreen;
+}
+
+.in_text_url a:visited{
+   color:  darkseagreen;
+}
+
+.in_text_url a:hover{
+   color: rgb(162, 112, 41);
+}
+
+.in_text_url a:active{
+   color:  rgb(182, 142, 41);
+}
+
+
+
+/*AUDIO/VIDEO STYLES*/
+
+audio, video {
+   display: block;
+   width: 90%;
+   margin: 5px auto;
+}
+
+object {
+   display: block;
+   margin: 5px auto;
+}
+
+
+
+/*NAV STYLES*/
+
+nav a{
+   color: black;
+}
+
+nav a:link{
+   color: black;
+}
+
+nav a:visited{
+   color:  black;
+}
+
+nav a:hover{
+   color: rgb(162, 112, 41);
+}
+
+a:active{
+   color:  rgb(182, 142, 41);
