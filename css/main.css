@@ -44,7 +44,7 @@ HEADING
 
 header {
   float: left;
-  margin: 0 0 30px 0;
+  margin: 0 0 100px 0;
   padding: 5px 0 0 0;
   width: 100%;
   background: url('../Calendar/img/IMG_6577.jpg') no-repeat center;
@@ -132,7 +132,7 @@ body {
 
 /* nav background on mobile devices */
 nav {
-background: rgba(85, 85, 85, .8);
+background: rgba(85, 85, 85, .4);
 }
 
 /* logo text*/
