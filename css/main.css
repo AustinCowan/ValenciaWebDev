@@ -48,7 +48,7 @@ header {
   height: 400px;
   padding: 5px 0 0 0;
   width: 100%;
-  background: url('../Calendar/img/IMG_6577.jpg') no-repeat cover;
+  background: url('../Calendar/img/IMG_6577.jpg') no-repeat center;
 }
 
 #logo {
