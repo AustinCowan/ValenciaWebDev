@@ -173,10 +173,10 @@ color: #fff;
 
 /* selected nav link */
 nav a.selected, nav a:hover {
-color: #32673f;
+color: #000;
 }
 
 /* paragraphs */
 p {
- color: #32673f;
+ color: #999;
 }
