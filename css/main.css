@@ -8,7 +8,7 @@ body {
 
 #wrapper {
   max-width: 940px;
-  margin: 0 auto;
+  margin: auto auto;
   padding: 0 5%;
 }
 
@@ -20,7 +20,7 @@ img {
  max-width: 100%;
  clear: both;
   display: block;
- margin: 0 auto;
+ margin: auto auto;
  
 }
 
