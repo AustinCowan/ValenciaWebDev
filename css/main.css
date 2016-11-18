@@ -14,7 +14,7 @@ body {
 
 #presenting {
 
-  background: url(../img_6659.jpeg);
+  background: url('../img_6659.jpeg') no-repeat center;
   width: 100%;
   display: block;
   clear: both;
