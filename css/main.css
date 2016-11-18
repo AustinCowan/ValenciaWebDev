@@ -12,7 +12,8 @@ body {
   padding: 0 5%;
 }
 
-#wrapper section img {
+#presenting {
+  width: 100%;
   display: block;
   margin: auto;
   box-shadow: 0px -10px 10px 20px rgba (0 , 0, 0, .8);
