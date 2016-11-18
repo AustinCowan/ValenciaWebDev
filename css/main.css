@@ -14,7 +14,7 @@ body {
 
 #presenting {
 
-  background: url('../img_6659.jpeg') no-repeat center;
+  background: url('../CR19.jpeg') no-repeat center;
   width: 100%;
   display: block;
   clear: both;
@@ -45,10 +45,10 @@ HEADING
 header {
   float: left;
   margin: 0 0 30px 0;
-  height: 45%;
+  height: 850px;
   padding: 5px 0 0 0;
   width: 100%;
-  background: url('../Calendar/img/IMG_6577.jpg') no-repeat center;
+  background: url('../Calendar/img/CR19.jpg') no-repeat center;
 }
 
 #logo {
