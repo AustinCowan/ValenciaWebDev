@@ -17,7 +17,7 @@ GENERAL
 *************************************/
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 #wrapper {
@@ -107,7 +107,7 @@ nav li {
 }
 
 nav a {
-  font-family:'Changa One', sans-serif;
+  font-family:'Helvetica', sans-serif;
   font-weight: 800;
   padding: 15px 10px;
 }
