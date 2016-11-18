@@ -13,6 +13,7 @@ body {
 }
 
 #presenting {
+  background-color: steelblue;
   width: 100%;
   display: block;
   margin: auto;
