@@ -132,7 +132,7 @@ body {
 
 /* nav background on mobile devices */
 nav {
-background: #7FA1A1;
+background: rgba(85, 85, 85, .8);
 }
 
 /* logo text*/
