@@ -18,8 +18,8 @@ a {
 
 img {
  max-width: 100%;
+ clear: both;
  margin: 0 auto;
- content: center;
  
 }
 
