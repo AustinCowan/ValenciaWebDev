@@ -1,0 +1,72 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Review Assignment
+
+   Special Effects style sheet
+   Author: Austin Cowan
+   Date:  11/20/2016 
+
+   Filename:         dfeffects.css
+   Supporting Files: paper.png
+
+*/
+
+
+
+/***********FAMILY LINKS STYLES***********/
+
+#familyLinks {
+    -moz-box-shadow: inset rgba(0, 0, 0, .6) -10px 0px 15px;
+    -webkit-box-shadow: inset rgba(0, 0, 0, .6) -10px 0px 15px;
+    box-shadow: inset rgba(0, 0, 0, .6) -10px 0px 15px;
+}
+
+#familyLinks img {
+    opacity: 0.6;
+    -moz-box-shadow: rgba(0, 0, 0, .6) 10px 10px 15px;
+    -webkit-box-shadow: rgba(0, 0, 0, .6) 10px 10px 15px;
+    box-shadow: rgba(0, 0, 0, .6) 10px 10px 15px;
+}
+
+#familyLinks img:hover {
+    -o-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    opacity: 1;
+}
+
+
+
+/***********ARTICLE STYLES***********/
+
+article {
+    background: -o-linear-gradient(left, rgb(151, 151, 151), rgb(231, 231, 231));
+    background: -ms-linear-gradient(left, rgb(151, 151, 151), rgb(231, 231, 231));
+    background: -moz-linear-gradient(left, rgb(151, 151, 151), rgb(231, 231, 231));
+    background: -webkit-linear-gradient(left, rgb(151, 151, 151), rgb(231, 231, 231));
+    background: linear-gradient(left, rgb(151, 151, 151), rgb(231, 231, 231));
+
+}
+
+article img {
+    border-width: 10px;
+
+    -o-border-image: url(paper.png) 70 repeat;
+    -moz-border-image: url(paper.png) 70 repeat;
+    -webkit-border-image: url(paper.png) 70 repeat;
+    border-image: url(paper.png) 70 repeat;
+}
+
+
+
+/***********PAGE SECTION STYLES***********/
+
+#page h1 {
+    text-shadow: black 1px 1px 0px,
+    rgba(30, 57, 0, .8) 5px 5px 10px;
+}
+
+
